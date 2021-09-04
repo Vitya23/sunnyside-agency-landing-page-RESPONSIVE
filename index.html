@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+    <link rel="stylesheet" href="styles/style.css">
+    <script defer src='scripts/main.js'></script>
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_wrapper">
+            <div class="header_block">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="">
+                </div>
+                <div class="menu">
+                    <ul class="menu_list">
+                        <li class="list "><a href="#info" class='js-scroll'>About</a> </li>
+                        <li class="list "><a href="#service" class='js-scroll'>Services</a> </li>
+                        <li class="list "> <a href="#gallery" class='js-scroll'>Projects</a> </li>
+                        <button class="header_button">Contact</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+    </header>
+    <div class="container_header">
+        <!-- Этот чекбокс даст нам поведение переключателя, он будет скрыт, но работать -->
+        <input id="toggle" type="checkbox">
+
+        <!-- ВАЖНО: любой элемент, который мы хотим модифицировать при изменении состояния чекбокса, является «братским» элементом для чекбокса -->
+
+        <!-- Эта метка привязана к чекбоксу и будет содержать переключение «кнопок» -->
+        <label class="toggle-container" for="toggle">
+        <!-- Если меню открыто, то здесь будет иконка «X», в противном случае просто иконка гамбургера -->
+        <span class="button button-toggle"></span>
+        </label>
+
+        <!-- Навигация -->
+        <nav class="nav">
+            <a rel="nofollow" rel="noreferrer" class="nav-item" href="">About</a>
+            <a rel="nofollow" rel="noreferrer" class="nav-item" href="">Services</a>
+            <a rel="nofollow" rel="noreferrer" class="nav-item" href="">Projects</a>
+            <a rel="nofollow" rel="noreferrer" class="nav-item" href="">Contact</a>
+        </nav>
+
+    </div>
+    <main class="main">
+        <section class="intro">
+            <div class="title">
+                <h1>WE ARE CREATIVES</h1>
+            </div>
+            <div class="arrowdown">
+                <a href="#info"><img src="./images/icon-arrow-down.svg" alt="arrow"></a>
+            </div>
+        </section>
+        <section class="info" id='info'>
+            <div class="info container" id='info--1' id="articles">
+                <div class="info__content-box container__position--2 info__content-box--1">
+                    <div class="info__content info__content--1">
+                        <h2 class="heading heading--2 m-bottom-medium">Transform your brand</h2>
+                        <p class="para para-light m-bottom-big">
+                            We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.
+                        </p>
+                        <div class="info__link-box">
+                            <a href="#" class="info__link">Learn more</a>
+                            <div class="highlight highlight--1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info__img info__img--1 container__position--1"></div>
+            </div>
+
+            <div class="info container">
+                <div class="info__img info__img--2 container__position--1"></div>
+                <div class="info__content-box container__position--2 info__content-box--2">
+                    <div class="info__content  info__content--2">
+                        <h2 class="heading heading--2 m-bottom-medium">
+                            Stand out to the right audience
+                        </h2>
+                        <p class="para para-light m-bottom-big">
+                            Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
+                        </p>
+                        <div class="info__link-box">
+                            <a href="#" class="info__link">Learn more</a>
+                            <div class="highlight highlight--2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="service" id='service'>
+                <div class="service container" id='service'>
+                    <div class="service__right">
+                        <div class="service__text-box">
+                            <h3 class="heading heading--3 m-bottom-medium">Graphic design</h3>
+                            <p class="para">
+                                Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service__left">
+                        <div class="service__text-box">
+                            <h3 class="heading heading--3 m-bottom-medium">Photography</h3>
+                            <p class="para">
+                                Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="clients" id='clients'>
+                <div class="clients_wrapper">
+                    <div class="clients_title">
+                        <h2>CLIENT TESTIMONIALS</h2>
+                    </div>
+                    <div class="client_cards">
+                        <div class="card">
+                            <div class="card_img"><img src="./images/image-emily.jpg" alt=""></div>
+                            <div class="card_text">
+                                <p> We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+                            </div>
+                            <div class="sign">
+                                <h3>Emily R.</h3>
+                                <p>Marketing Director</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_img"><img src="./images/image-thomas.jpg" alt=""></div>
+                            <div class="card_text">
+                                <p> Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+                            </div>
+                            <div class="sign">
+                                <h3> Thomas S.
+                                </h3>
+                                <p>Chief Operating Officer</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_img"><img src="./images/image-jennie.jpg" alt=""></div>
+                            <div class="card_text">
+                                <p> Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+                            </div>
+                            <div class="sign">
+                                <h3>Jennie F.</h3>
+                                <p> Business Owner </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="gallery" id='gallery'>
+                <div class="gallery_block" id='projects'>
+                    <div class="gallery__pic--1 gallery__pic"></div>
+                    <div class="gallery__pic--2 gallery__pic"></div>
+                    <div class="gallery__pic--3 gallery__pic"></div>
+                    <div class="gallery__pic--4 gallery__pic"></div>
+                </div>
+            </section>
+    </main>
+    <footer class="footer">
+        <div class="footer_block">
+            <div class="footer_logo">
+                <img src="images/logo.svg" alt="">
+            </div>
+            <div class="footer_about">
+                <a href="#info">
+                    <p>About</p>
+                </a>
+                <a href="#service">
+                    <p>Services</p>
+                </a>
+                <a href="#gallery">
+                    <p>Projects</p>
+                </a>
+            </div>
+        </div>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Kotov Viktor</a>.
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
